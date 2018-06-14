@@ -46,3 +46,7 @@ exclude:
   - package.json
   - webpack.config.json
   - webpack
+  - TODO.md
+
+sass:
+  style: compressed
