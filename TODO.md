@@ -2,6 +2,7 @@
 
 - [ ] Resolve JS TODO's
 - [ ] Create story pages
+- [ ] Create slicer page
 - [ ] Create landing page
 - [ ] Create FAQ page
 - [ ] Replace Jekyll theme and related files
