@@ -91,10 +91,11 @@ function addCircles (circles) {
 
 // TODO: organise chart setup code
 const varname = 'funder';
-const width = 740, height = 500;
+// TODO: responsive height
+let width = (window.innerWidth - 300), height = 710;
 const padding = 2;
 // TODO: generate colours
-const fill = d3.scale.ordinal().range(['red', 'green', 'blue', 'purple', 'yellow', 'grey']);
+const fill = d3.scale.ordinal().range(['#5bc0eb', '#fde74c', '#9bc53d', '#e55934', '#fa7921', '#ff6b6b']);
 const svg = d3.select('#chart').append('svg')
               .attr('width', width)
               .attr('height', height);
@@ -118,6 +119,14 @@ d3.json(cors + url, function (error, data) {
   document.getElementById('slice').addEventListener('change', function () {
     return draw(this.value);
   });
+
+  // TODO: refactor
+  window.addEventListener('resize', resize);
+  function resize() {
+    width = window.innerWidth - 300;
+    svg.attr('width', width);
+    draw('funder');
+  }
 
   function draw (varname) {
     const centers = treemap(data, varname, [width, height]);
