@@ -1,0 +1,49 @@
+---
+layout: minimal
+---
+
+<article class="story-wrapper" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="sidebar-wrapper">
+    <aside class="sidebar">
+      <div class="f1">
+        <header>
+          <h1 class="" itemprop="name headline">{{ page.title | escape }}</h1>
+        </header>
+
+        <label for="slice">Slice by:</label>
+        <select name="slice" id="slice">
+          <option value="query">Query</option>
+          <option value="funder">Funder</option>
+          <option value="fund">Fund</option>
+          <option value="year">Year</option>
+          <option value="location">Location</option>
+        </select>
+
+        <div itemprop="articleBody">
+          {{ content }}
+        </div>
+      </div>
+
+      <footer>
+        {% if page.prev %}
+        <a href="{{ page.prev }}">Prev</a>
+        {% endif %}
+
+        {% if page.next %}
+        <a href="{{ page.next }}">Next</a>
+        {% endif %}
+
+        <hr>
+
+        Links...
+      </footer>
+    </aside>
+  </div>
+
+  <section class="chart-wrapper">
+    <div id="chart"></div>
+  </section>
+
+  <!-- TODO: refactor needed? -->
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

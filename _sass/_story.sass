@@ -1,0 +1,32 @@
+// Config
+// ===========================================================================
+
+$sidebar-width: 300px
+$sidebar-bg: #1c0121
+$sidebar-font: #f0edf9
+$story-bg: #1a1a21
+
+// ===========================================================================
+
+.story-wrapper
+  min-height: 100vh
+  background: $story-bg
+
+.chart-wrapper
+  margin-left: $sidebar-width
+
+.sidebar-wrapper
+  position: fixed
+  height: 100%
+  overflow-y: scroll
+
+.sidebar-wrapper, .sidebar
+  background: $sidebar-bg
+  color: $sidebar-font
+
+.sidebar
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+  width: $sidebar-width
+  padding: 15px
