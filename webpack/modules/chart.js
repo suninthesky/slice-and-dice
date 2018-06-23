@@ -95,7 +95,11 @@ function labels(centers) {
         .attr('class', 'label')
         .text((d) => d.name)
         .attr('transform', function (d) {
-            return 'translate(' + (d.x + (d.dx / 2)) + ', ' + (d.y + 20) + ')';
+            if (this.getComputedTextLength() < 150) {
+                return 'translate(' + (d.x + (d.dx / 2)) + ', ' + (d.y + 20) + ')';
+            } else {
+                return 'translate(-9999, 0)';
+            }
         });
 }
 

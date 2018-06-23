@@ -2,7 +2,6 @@
 
 ## TODO
 
-- [ ] Prevent chart labels overlapping
 - [ ] Responsive chart height
 - [ ] Generate chart colours
 - [ ] Resolve TODO's
@@ -25,6 +24,7 @@
 - CORS
 - Tooltip clipping
 - undefined location in tooltip
+- Naive circle label overlapping fix
 
 ## Backlog
 
