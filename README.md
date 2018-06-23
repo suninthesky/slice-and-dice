@@ -2,8 +2,8 @@
 
 ## TODO
 
-- [ ] Generate chart colours
 - [ ] Responsive layout
+- [ ] Add duration to chart data
 - [ ] Resolve TODO's
 - [ ] Create story pages
 - [ ] Create slicer page

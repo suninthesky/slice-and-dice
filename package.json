@@ -15,6 +15,7 @@
     "webpack-cli": "^3.0.3"
   },
   "dependencies": {
-    "d3": "^3.5.17"
+    "d3": "^3.5.17",
+    "randomcolor": "^0.5.3"
   }
 }

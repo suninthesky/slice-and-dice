@@ -1,6 +1,7 @@
 /*jslint es6 */
 
 import d3 from 'd3';
+import randomColor from 'randomColor';
 
 export default {init};
 
@@ -27,10 +28,8 @@ function init({el, params}) {
 }
 
 function addCircles(circles) {
-    // TODO: fill - generate colours
-    const fill = d3.scale.ordinal().range(
-        ['#5bc0eb', '#fde74c', '#9bc53d', '#e55934', '#fa7921', '#ff6b6b']
-    );
+    const colorOpts = {count: uniq(pluck(STATE.data, 'funder')).length};
+    const fill = d3.scale.ordinal().range(randomColor(colorOpts));
 
     circles.enter().append('circle')
         .attr('class', 'node')
