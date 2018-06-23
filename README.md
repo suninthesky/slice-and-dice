@@ -2,10 +2,10 @@
 
 ## TODO
 
-- [ ] Create slicer page
-- [ ] Create story pages
 - [ ] Create landing page
+- [ ] Style story pages
 - [ ] Create FAQ page
+- [ ] Write slicer page
 - [ ] Refactor frame.html
 - [ ] Replace Jekyll theme and related files
 - [ ] Resolve TODO's

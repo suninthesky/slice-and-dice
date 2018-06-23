@@ -12,11 +12,13 @@ layout: minimal
 
         <div id='story-query' hidden>{{ page.query }}</div>
 
+        {% if page.form %}
         <form id='query'>
           <input type="text" name="q">
           <input type="submit" value="Update">
           <input type="reset" value="Clear">
         </form>
+        {% endif %}
 
         <label for="slice">Slice by:</label>
         <select name="slice" id="slice">
