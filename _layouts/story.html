@@ -10,9 +10,16 @@ layout: minimal
           <h1 class="" itemprop="name headline">{{ page.title | escape }}</h1>
         </header>
 
+        <div id='story-query' hidden>{{ page.query }}</div>
+
+        <form id='query'>
+          <input type="text" name="q">
+          <input type="submit" value="Update">
+          <input type="reset" value="Clear">
+        </form>
+
         <label for="slice">Slice by:</label>
         <select name="slice" id="slice">
-          <option value="query">Query</option>
           <option value="funder">Funder</option>
           <option value="fund">Fund</option>
           <option value="year">Year</option>
