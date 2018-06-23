@@ -7,7 +7,7 @@ export default {init};
 
 const STATE = {};
 const OPTS = {
-    width: (window.innerWidth - 300),
+    width: width(),
     height: 710,
     rowHeight: 200,
     rowNums: 4,
@@ -136,7 +136,7 @@ function plot(data, params) {
     sliceCircles(slice);
 
     window.addEventListener('resize', function () {
-        OPTS.width = window.innerWidth - 300;
+        OPTS.width = width();
         OPTS.svg.attr('width', OPTS.width);
         sliceCircles(slice);
     }, false);
@@ -247,5 +247,13 @@ function validateUrl(url) {
         return cors + url;
     } else {
         return '';
+    }
+}
+
+function width() {
+    if (window.innerWidth < 720) {
+        return window.innerWidth;
+    } else {
+        return window.innerWidth - 300;
     }
 }

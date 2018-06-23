@@ -2,7 +2,6 @@
 
 ## TODO
 
-- [ ] Responsive layout
 - [ ] Add duration to chart data
 - [ ] Resolve TODO's
 - [ ] Create story pages

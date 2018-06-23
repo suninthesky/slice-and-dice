@@ -16,11 +16,16 @@ $story-bg: #1a1a21
   position: relative
   overflow: hidden
   margin-left: $sidebar-width
+  @media screen and (max-width: 720px)
+    margin-left: 0
 
 .sidebar-wrapper
   position: fixed
   height: 100%
   overflow-y: auto
+  @media screen and (max-width: 720px)
+    position: relative
+    height: auto
 
 .sidebar-wrapper, .sidebar
   background: $sidebar-bg
@@ -32,3 +37,6 @@ $story-bg: #1a1a21
   flex-direction: column
   width: $sidebar-width
   padding: 15px
+  @media screen and (max-width: 720px)
+    min-height: auto
+    width: 100%
