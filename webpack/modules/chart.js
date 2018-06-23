@@ -4,16 +4,16 @@ import d3 from 'd3';
 
 export default {init};
 
-// TODO: height - responsive
+const STATE = {};
 const OPTS = {
     width: (window.innerWidth - 300),
     height: 710,
+    rowHeight: 200,
+    rowNums: 4,
     padding: 2,
     force: d3.layout.force(),
     tooltip: d3.select('#tooltip')
 };
-
-const STATE = {};
 
 function init({el, params}) {
     d3.json(validateUrl(params.q), function (error, data) {
@@ -122,11 +122,14 @@ function mapData(arr) {
 
 function plot(data, params) {
     const slice = params.slice || 'funder';
+
+    STATE.data = mapData(data.grants);
+
+    OPTS.height = (uniq(pluck(STATE.data, slice)).length / OPTS.rowNums) * OPTS.rowHeight;
     OPTS.svg = d3.select('#chart').append('svg')
         .attr('width', OPTS.width)
         .attr('height', OPTS.height);
 
-    STATE.data = mapData(data.grants);
     STATE.maxRadius = d3.max(pluck(STATE.data, 'radius'));
     STATE.circles = OPTS.svg.selectAll('circle').data(STATE.data);
 
@@ -178,7 +181,7 @@ function showTooltip(d) {
     OPTS.tooltip.html(html)
         .style('visibility', 'visible')
         .style('top', (cy + r + 7) + 'px')
-        .style('left', (cx + 200) + 'px');
+        .style('left', (cx - 100) + 'px');
 }
 
 function sliceCircles(slice) {
@@ -224,12 +227,16 @@ function treemap(data, vname, size) {
     const sums = sumAmountByCategory(data, vname);
     const children = constructChildren(sums);
 
-    d3.layout.treemap().size(size).ratio(1 / 1).padding(15)
+    d3.layout.treemap().size(size).ratio(1 / 1).padding(25)
         .value(function (d) {
             return Math.sqrt(d.value / Math.PI);
         }).nodes({children: children});
 
     return children;
+}
+
+function uniq(array) {
+    return array.filter((el, pos, arr) => arr.indexOf(el) === pos)
 }
 
 function validateUrl(url) {
