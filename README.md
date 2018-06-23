@@ -2,7 +2,6 @@
 
 ## TODO
 
-- [ ] Add tooltips to circles
 - [ ] Prevent chart labels overlapping
 - [ ] Responsive chart height
 - [ ] Generate chart colours
@@ -20,3 +19,15 @@
 - [ ] Handle grantnav recipient query error
 - [ ] Change Jekyll SEO og:locale
 - [ ] Style 404.html
+
+## Known issues
+
+- CORS
+- Tooltip clipping
+- undefined location in tooltip
+
+## Backlog
+
+- Clicking circle opens new page to original grantnav record
+- Slice data by second dimension
+- Iframe for sharing

@@ -9,7 +9,8 @@ const OPTS = {
     width: (window.innerWidth - 300),
     height: 710,
     padding: 2,
-    force: d3.layout.force()
+    force: d3.layout.force(),
+    tooltip: d3.select('#tooltip')
 };
 
 const STATE = {};
@@ -36,7 +37,11 @@ function addCircles(circles) {
         .attr('cx', (d) => d.x)
         .attr('cy', (d) => d.y)
         .attr('r', 0)
-        .style('fill', (d) => fill(d.funder));
+        .style('fill', (d) => fill(d.funder))
+        .on('mouseout', () => OPTS.tooltip.style('visibility', 'hidden'))
+        .on('mouseover', function (d) {
+            showTooltip.call(this, d);
+        });
 
     circles.transition()
         .duration(1000)
@@ -142,6 +147,34 @@ function pluck(array, key) {
 
 function printMsg(el, msg = '') {
     el.innerText = msg;
+}
+
+function showTooltip(d) {
+    const cx = this.cx.baseVal.value;
+    const cy = this.cy.baseVal.value;
+    const r = this.r.baseVal.value;
+
+    const html = `
+        <strong>Title</strong>
+        <p>${d.title}</p>
+        <strong>Description</strong>
+        <p>${d.description}</p>
+        <strong>Amount</strong>
+        <p>${d.amount}</p>
+        <strong>Funder</strong>
+        <p>${d.funder}</p>
+        <strong>Fund</strong>
+        <p>${d.fund}</p>
+        <strong>Year</strong>
+        <p>${d.year}</p>
+        <strong>Location</strong>
+        <p>${d.location}</p>
+    `;
+
+    OPTS.tooltip.html(html)
+        .style('visibility', 'visible')
+        .style('top', (cy + r + 7) + 'px')
+        .style('left', (cx + 200) + 'px');
 }
 
 function sliceCircles(slice) {
