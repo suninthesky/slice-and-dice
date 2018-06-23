@@ -2,19 +2,17 @@
 
 ## TODO
 
-- [ ] Add duration to chart data
-- [ ] Resolve TODO's
-- [ ] Create story pages
 - [ ] Create slicer page
+- [ ] Create story pages
 - [ ] Create landing page
 - [ ] Create FAQ page
-- [ ] Replace Jekyll theme and related files
 - [ ] Refactor frame.html
+- [ ] Replace Jekyll theme and related files
+- [ ] Resolve TODO's
+- [ ] undefined location & duration in tooltip
 - [ ] Update README.md
 - [ ] Update package.json meta data
 - [ ] Add robots.txt
-- [ ] Unit tests for JS
-- [ ] Handle grantnav recipient query error
 - [ ] Change Jekyll SEO og:locale
 - [ ] Style 404.html
 
@@ -22,7 +20,6 @@
 
 - CORS
 - Tooltip clipping
-- undefined location in tooltip
 - Naive circle label overlapping fix
 
 ## Backlog
@@ -30,3 +27,4 @@
 - Clicking circle opens new page to original grantnav record
 - Slice data by second dimension
 - Iframe for sharing
+- Unit tests for JS

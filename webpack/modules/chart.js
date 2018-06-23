@@ -19,8 +19,8 @@ const OPTS = {
 function init({el, params}) {
     d3.json(validateUrl(params.q), function (error, data) {
         if (error) {
-            // TODO: reword
-            return printMsg(el, 'Failed to load data');
+            const msg = 'Please supply a valid <a href="http://grantnav.threesixtygiving.org/" target="_blank">grantnav</a> search URL'
+            return printMsg(el, msg);
         }
         printMsg(el);
         plot(data, params);
@@ -112,6 +112,7 @@ function mapData(arr) {
             year: obj.awardDate.substring(0, 4),
             title: obj.title,
             description: obj.description,
+            duration: exists(obj.plannedDates, 'duration'),
             radius: (Math.sqrt(+obj.amountAwarded / Math.PI)) / 10,
             x: Math.random() * OPTS.width,
             y: Math.random() * OPTS.height
@@ -152,7 +153,7 @@ function pluck(array, key) {
 }
 
 function printMsg(el, msg = '') {
-    el.innerText = msg;
+    el.innerHTML = msg;
 }
 
 function showTooltip(d) {
@@ -175,6 +176,8 @@ function showTooltip(d) {
         <p>${d.year}</p>
         <strong>Location</strong>
         <p>${d.location}</p>
+        <strong>Duration (months)</strong>
+        <p>${d.duration}</p>
     `;
 
     OPTS.tooltip.html(html)
