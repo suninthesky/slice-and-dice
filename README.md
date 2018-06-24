@@ -2,7 +2,7 @@
 
 ## TODO
 
-- [ ] Create landing page
+- [ ] elements console error
 - [ ] Style story pages
 - [ ] Create FAQ page
 - [ ] Write slicer page

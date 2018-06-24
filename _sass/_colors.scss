@@ -1,0 +1,19 @@
+$colors: (
+  'dark-purple': #5537AB,
+  'purple':      #4B0FA7,
+  'teal':        #2EAD9F,
+  'turquoise':   #7AD6CE,
+  'white':       #FAFAFA
+);
+
+@each $var, $val in $colors {
+  .#{$var} {
+    color: $val;
+    &:visited {
+      color: $val;
+    }
+  }
+  .bg-#{$var} {
+    background-color: $val;
+  }
+}

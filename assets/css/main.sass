@@ -5,20 +5,64 @@
 // ===========================================================================
 
 @import 'minireset'
+
+@import 'button'
+@import 'colors'
 @import 'chart'
+@import 'margin'
+@import 'shadow'
 @import 'story'
+@import 'typography'
 
 // Base
 // ===========================================================================
 
 html, body
+  background-color: map-get($colors, 'purple')
+  color: map-get($colors, 'white')
   font-size: 16px
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+
+a
+  color: map-get($colors, 'turquoise')
+  text-decoration: none
+  &:hover
+    text-decoration: underline
 
 // Utility
 // ===========================================================================
 
 .f1
   flex: 1
+
+// Home
+// ===========================================================================
+
+.home-container
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  padding: 0 15px
+  text-align: center
+  align-items: center
+  background: url(/assets/images/bg-circles.svg) no-repeat
+  background-size: 1500px
+  background-position: center
+  @media screen and (max-width: 720px)
+    background-size: 1000px
+  @media screen and (max-width: 480px)
+    background-size: 500px
+.home-main
+  flex: 1
+  display: flex
+  align-items: center
+.home-footer
+  width: 290px
+  font-size: 15px
+  hr
+    border-color: map-get($colors, 'dark-purple')
+    border-style: solid
 
 // TODO: refactor
 // ===========================================================================
