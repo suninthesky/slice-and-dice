@@ -162,14 +162,14 @@ function showTooltip(d) {
     const r = this.r.baseVal.value;
 
     const html = `
+        <strong>Funder</strong>
+        <p>${d.funder}</p>
         <strong>Title</strong>
         <p>${d.title}</p>
         <strong>Description</strong>
         <p>${d.description}</p>
         <strong>Amount</strong>
         <p>${d.amount}</p>
-        <strong>Funder</strong>
-        <p>${d.funder}</p>
         <strong>Fund</strong>
         <p>${d.fund}</p>
         <strong>Year</strong>
@@ -183,7 +183,7 @@ function showTooltip(d) {
     OPTS.tooltip.html(html)
         .style('visibility', 'visible')
         .style('top', (cy + r + 7) + 'px')
-        .style('left', (cx - 100) + 'px');
+        .style('left', (cx - 110) + 'px');
 }
 
 function sliceCircles(slice) {

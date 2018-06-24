@@ -1,0 +1,20 @@
+@import 'helpers'
+
+label, select
+  display: block
+  width: 100%
+
+select
+  background: #fff
+  border: none
+  border-radius: 0
+  font-size: 16px
+  padding: 14px 24px 10px 12px
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'%3E%3C/path%3E%3C/svg%3E")
+  background-position: calc(100% - 5px) 60%
+  background-repeat: no-repeat
+  +prefix(appearance, none, webkit moz)
+  &::-ms-expand
+    display: none
+  &:focus
+    outline: none

@@ -6,11 +6,23 @@ layout: default
   <div class="sidebar-wrapper">
     <aside class="sidebar">
       <div class="f1">
+        <div id='story-query' hidden>{{ page.query }}</div>
+
         <header>
-          <h1 class="" itemprop="name headline">{{ page.title | escape }}</h1>
+          <a href="{{ page.url | relative_url }}" class="white">
+            <h1 class="h2 bold" itemprop="name headline">{{ page.title | escape }}</h1>
+          </a>
         </header>
 
-        <div id='story-query' hidden>{{ page.query }}</div>
+        <div class="flex">
+          {% if page.prev %}
+          <a href="{{ page.prev }}" class="btn btn-thin white bg-light-purple shadow-r">Prev</a>
+          {% endif %}
+          <span style="width: 40px;"></span>
+          {% if page.next %}
+          <a href="{{ page.next }}" class="btn btn-thin white bg-light-purple shadow">Next</a>
+          {% endif %}
+        </div>
 
         {% if page.form %}
         <form id='query'>
@@ -20,14 +32,18 @@ layout: default
         </form>
         {% endif %}
 
-        <label for="slice">Slice by:</label>
-        <select name="slice" id="slice">
-          <option value="funder">Funder</option>
-          <option value="fund">Fund</option>
-          <option value="year">Year</option>
-          <option value="location">Location</option>
-          <option value="duration">Duration (months)</option>
-        </select>
+        <div class="mt25 mb25">
+          <label for="slice" class="mb10 bold">Slice by</label>
+          <select name="slice" id="slice" class="shadow-d">
+            <option value="funder">Funder</option>
+            <option value="fund">Fund</option>
+            <option value="year">Year</option>
+            <option value="location">Location</option>
+            <option value="duration">Duration (months)</option>
+          </select>
+        </div>
+
+        <hr class="mb25">
 
         <div itemprop="articleBody">
           {{ content }}
@@ -35,23 +51,29 @@ layout: default
       </div>
 
       <footer>
-        {% if page.prev %}
-        <a href="{{ page.prev }}">Prev</a>
-        {% endif %}
+        <div class="flex">
+          {% if page.prev %}
+          <a href="{{ page.prev }}" class="btn btn-thin white bg-light-purple shadow-r">Prev</a>
+          {% endif %}
+          <span style="width: 40px;"></span>
+          {% if page.next %}
+          <a href="{{ page.next }}" class="btn btn-thin white bg-light-purple shadow">Next</a>
+          {% endif %}
+        </div>
 
-        {% if page.next %}
-        <a href="{{ page.next }}">Next</a>
-        {% endif %}
+        <hr class="mt25 mb25">
 
-        <hr>
-
-        Links...
+        <div class="sidebar-footer">
+          <a href="/">Back to start</a>
+          <span class="pale-purple">•</span>
+          <a href="{{ "/slice-and-dice" | relative_url }}">Skip tour</a>
+        </div>
       </footer>
     </aside>
   </div>
 
   <section class="chart-wrapper">
-    <div id="tooltip"></div>
+    <div id="tooltip" class="shadow-d"></div>
     <div id="chart"></div>
   </section>
 </article>

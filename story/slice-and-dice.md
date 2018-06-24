@@ -2,6 +2,6 @@
 layout: story
 title:  Slice & Dice
 permalink: /slice-and-dice
-prev: /story/01-tech-grant-funding-over-the-years
+tour_link: true
 form: true
 ---

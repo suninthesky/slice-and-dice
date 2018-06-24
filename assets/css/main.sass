@@ -9,6 +9,7 @@
 @import 'button'
 @import 'colors'
 @import 'chart'
+@import 'form'
 @import 'margin'
 @import 'shadow'
 @import 'story'
@@ -18,7 +19,7 @@
 // ===========================================================================
 
 html, body
-  background-color: map-get($colors, 'purple')
+  background-color: map-get($colors, 'aubergine')
   color: map-get($colors, 'white')
   font-size: 16px
   -moz-osx-font-smoothing: grayscale
@@ -30,9 +31,25 @@ a
   &:hover
     text-decoration: underline
 
+hr
+  border-color: map-get($colors, 'pale-purple')
+  border-style: solid
+
+::-webkit-scrollbar
+  width: 9px
+  height: 9px
+
+::-webkit-scrollbar-track
+  background: rgba(0, 0, 0, 0.1)
+
+::-webkit-scrollbar-thumb
+  background: rgba(0, 0, 0, 0.5)
+
 // Utility
 // ===========================================================================
 
+.flex
+  display: flex
 .f1
   flex: 1
 
@@ -60,22 +77,3 @@ a
 .home-footer
   width: 290px
   font-size: 15px
-  hr
-    border-color: map-get($colors, 'dark-purple')
-    border-style: solid
-
-// TODO: refactor
-// ===========================================================================
-
-@mixin relative-font-size($ratio)
-  font-size: 16px * $ratio
-
-blockquote
-  color: #828282
-  border-left: 4px solid lighten(#828282, 40%)
-  padding-left: 30px / 2
-  @include relative-font-size(1.125)
-  letter-spacing: -1px
-  font-style: italic
-  > :last-child
-    margin-bottom: 0

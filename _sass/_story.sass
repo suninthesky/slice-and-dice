@@ -1,10 +1,11 @@
 // Config
 // ===========================================================================
 
+@import 'colors'
+
 $sidebar-width: 300px
-$sidebar-bg: #1c0121
-$sidebar-font: #f0edf9
-$story-bg: #1a1a21
+$sidebar-bg: map-get($colors, 'dark-purple')
+$story-bg: map-get($colors, 'aubergine')
 
 // ===========================================================================
 
@@ -29,14 +30,17 @@ $story-bg: #1a1a21
 
 .sidebar-wrapper, .sidebar
   background: $sidebar-bg
-  color: $sidebar-font
 
 .sidebar
   display: flex
   min-height: 100vh
   flex-direction: column
   width: $sidebar-width
-  padding: 15px
+  padding: 25px 15px
   @media screen and (max-width: 720px)
     min-height: auto
     width: 100%
+
+.sidebar-footer
+  font-size: 15px
+  text-align: center
