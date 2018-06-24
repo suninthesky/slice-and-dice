@@ -26,11 +26,16 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function updateChartControls(params) {
-    const query = document.getElementById('query');
     const slice = document.getElementById('slice');
+    slice.value = params.slice || 'funder';
+
+    const query = document.getElementById('query');
+
+    if (!query) {
+        return;
+    }
 
     query.elements.q.value = params.q || '';
-    slice.value = params.slice || 'funder';
 
     query.addEventListener('submit', function (e) {
         e.preventDefault();

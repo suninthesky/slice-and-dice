@@ -2,18 +2,16 @@
 
 ## TODO
 
-- [ ] elements console error
 - [ ] Style story pages
-- [ ] Create FAQ page
+- [ ] Write story pages with intro
 - [ ] Write slicer page
-- [ ] Refactor frame.html
-- [ ] Replace Jekyll theme and related files
 - [ ] Resolve TODO's
 - [ ] undefined location & duration in tooltip
 - [ ] Update README.md
 - [ ] Update package.json meta data
 - [ ] Add robots.txt
 - [ ] Change Jekyll SEO og:locale
+- [ ] Add social sharing meta data and images
 - [ ] Style 404.html
 
 ## Known issues
