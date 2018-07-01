@@ -2,7 +2,6 @@
 
 ## TODO
 
-- [ ] Can pass in 'slice' param from frontmatter
 - [ ] Style slicer page
 - [ ] Write story pages with intro
 - [ ] Write slicer page

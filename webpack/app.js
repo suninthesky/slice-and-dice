@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
         params.q = document.getElementById('story-query').innerText;
     }
 
+    if (!params.slice) {
+        params.slice = document.getElementById('story-slice').innerText;
+    }
+
     const opts = {el: chartContainer, params};
     chart.init(opts);
 
