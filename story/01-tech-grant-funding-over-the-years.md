@@ -9,16 +9,16 @@ prev: /
 next: /slice-and-dice
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vel dignissimos, maxime unde in deserunt.
+This tool was created as a submission to the [360Giving Data Visualisation Challenge](https://challenge.threesixtygiving.org/){:target="_blank"}, in answer to the question "_Who has funded what themes throughout the years_".
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vel dignissimos, maxime unde in deserunt odit, necessitatibus sequi eius amet minus. Ducimus, tempore labore! Explicabo quos dignissimos animi distinctio iste!
+It allows you to take the URL of a search from [GrantNav](http://grantnav.threesixtygiving.org/){:target="_blank"}, and visually **slice** it up by dimensions such as [Year]({{ page.url | append: "?slice=year" }}) or [Location]({{ page.url | append: "?slice=location" }}).
 
-[Link](http://www.example.com){:target="_blank"}
+The following pages will guide you through a series of **slices** in response to the challenge question, ending in a version of the tool you can use to create your own visualisations.
 
->quote
+This **slice** shows grants with a "tech" theme. We can see that Comic Relief dominated in 2017, along with a number of historic grants in other years which aren't quite right for the digital technology focus we're interested in. Let's try and improve this...
 
-1. One
-2. Two
-
-- One
-- Two
+<!-- TODO: add links -->
+>**Please note**  
+>As this is primarily a challenge submission it has not been optimised for heavy use, and includes a number of [known issues](#).
+>
+>If you spot a bug or would like to request a feature, please [file an issue](#), or even better consider [contributing](#).
