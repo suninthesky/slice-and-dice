@@ -2,7 +2,6 @@
 
 ## TODO
 
-- [ ] Style slicer page
 - [ ] Write story pages with intro
 - [ ] Write slicer page
 - [ ] Vertical align JS loading message (with optional spinner)
@@ -16,7 +15,6 @@
 - [ ] undefined location & duration in tooltip
 - [ ] Add automated links
 - [ ] Style 404.html
-- [ ] Account for scrollbar width in sidebar across browsers
 
 ## Known issues
 

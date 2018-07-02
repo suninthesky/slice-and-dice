@@ -25,11 +25,14 @@ layout: default
           {% endif %}
         </div>
 
-        {% if page.form %}
+        {% if page.tool %}
+        <a href="/" class="btn btn-thin white bg-light-purple shadow mb25">Take a tour</a>
+
+        <p class="mb10 bold">Query</p>
         <form id='query'>
-          <input type="text" name="q">
-          <input type="submit" value="Update">
-          <input type="reset" value="Clear">
+          <input type="text" name="q" placeholder="GrantNav URL" class="shadow-d">
+          <input type="submit" value="Update" title="Update" class="shadow-d">
+          <input type="reset" value="Clear" title="Clear" class="shadow-d">
         </form>
         {% endif %}
 
@@ -65,9 +68,16 @@ layout: default
         <hr class="mt25 mb25">
 
         <div class="sidebar-footer">
+          {% if page.tool %}
+          <a href="http://www.suninthesky.co.uk/" target="_blank" class="white">By suninthesky</a>
+          <span class="pale-purple">•</span>
+          <!-- TODO: add link -->
+          <a href="#" class="white">GitHub</a>
+          {% else %}
           <a href="/">Back to start</a>
           <span class="pale-purple">•</span>
           <a href="{{ "/slice-and-dice" | relative_url }}">Skip tour</a>
+          {% endif %}
         </div>
       </footer>
     </aside>
