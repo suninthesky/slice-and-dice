@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
-    // TODO: refactor
-    chartContainer.innerText = 'Loading...';
+    const msg = "Loading data from GrantNav..."
+    chartContainer.innerHTML = `<div style="position: relative; top: 50px;">${msg}</div>`;
 
     const params = queryParams.all(window.location.search);
 

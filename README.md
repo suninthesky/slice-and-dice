@@ -3,23 +3,35 @@
 ## TODO
 
 - [ ] Write slicer page
-- [ ] Min height for chart (should it be set by current no. of segments or no. of funder segments)
-- [ ] Tooltip clipping?
-- [ ] Vertical align JS loading message (with optional spinner)
-- [ ] Swap out CORS proxy
+- [ ] Update package.json meta data
+- [ ] Update README.md + license
 - [ ] Push to GitHub
 - [ ] Resolve TODO's
-- [ ] Update README.md
-- [ ] Update package.json meta data
 - [ ] Add robots.txt
-- [ ] Deploy
-- [ ] Limit data to 1,000 grants
 - [ ] Update SEO description frontmatter
 - [ ] Change Jekyll SEO og:locale
-= [ ] Favicon
+= [ ] Add favicon
 - [ ] Add social sharing meta data and images
+- [ ] Deploy
+- [ ] Limit data to 1,000 grants
 - [ ] undefined location & duration in tooltip
 - [ ] Add automated links
+
+## About
+
+<!-- TODO: -->
+
+## Setup
+
+<!-- TODO: -->
+
+## Development
+
+<!-- TODO: -->
+
+## Deployment
+
+<!-- TODO: -->
 
 ## Known issues
 
@@ -34,3 +46,11 @@
 - Slice data by second dimension
 - Iframe for sharing
 - Unit tests for JS
+
+## Contributing
+
+<!-- TODO: -->
+
+## License
+
+<!-- TODO: -->

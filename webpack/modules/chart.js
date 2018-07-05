@@ -19,7 +19,7 @@ const OPTS = {
 function init({el, params}) {
     d3.json(validateUrl(params.q), function (error, data) {
         if (error) {
-            const msg = 'Please supply a valid <a href="http://grantnav.threesixtygiving.org/" target="_blank">grantnav</a> search URL'
+            const msg = 'Please supply a valid <a href="http://grantnav.threesixtygiving.org/" target="_blank">GrantNav</a> search URL'
             return printMsg(el, msg);
         }
         printMsg(el);
@@ -125,7 +125,7 @@ function plot(data, params) {
 
     STATE.data = mapData(data.grants);
 
-    OPTS.height = (uniq(pluck(STATE.data, slice)).length / OPTS.rowNums) * OPTS.rowHeight;
+    OPTS.height = (uniq(pluck(STATE.data, 'funder')).length / OPTS.rowNums) * OPTS.rowHeight;
     OPTS.svg = d3.select('#chart').append('svg')
         .attr('width', OPTS.width)
         .attr('height', OPTS.height);
@@ -153,7 +153,7 @@ function pluck(array, key) {
 }
 
 function printMsg(el, msg = '') {
-    el.innerHTML = msg;
+    el.innerHTML = `<div style="position: relative; top: 50px;">${msg}</div>`;
 }
 
 function showTooltip(d) {
