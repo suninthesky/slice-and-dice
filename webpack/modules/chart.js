@@ -242,12 +242,12 @@ function uniq(array) {
 }
 
 function validateUrl(url) {
-    const cors = 'https://cors-anywhere.herokuapp.com/';
     const pattern = /^www|https?:\/\//;
 
     if (pattern.test(url)) {
-        url = url.replace(/search\?/, 'search.json?');
-        return cors + url;
+        const api = /http:\/\/grantnav.threesixtygiving.org\/search\?/;
+        const proxy = 'https://slice-and-dice.herokuapp.com/search.json?';
+        return url.replace(api, proxy);
     } else {
         return '';
     }

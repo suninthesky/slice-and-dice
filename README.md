@@ -2,8 +2,9 @@
 
 ## TODO
 
-- [ ] Write story pages
 - [ ] Write slicer page
+- [ ] Min height for chart (should it be set by current no. of segments or no. of funder segments)
+- [ ] Tooltip clipping?
 - [ ] Vertical align JS loading message (with optional spinner)
 - [ ] Swap out CORS proxy
 - [ ] Push to GitHub
@@ -13,11 +14,12 @@
 - [ ] Add robots.txt
 - [ ] Deploy
 - [ ] Limit data to 1,000 grants
+- [ ] Update SEO description frontmatter
 - [ ] Change Jekyll SEO og:locale
+= [ ] Favicon
 - [ ] Add social sharing meta data and images
 - [ ] undefined location & duration in tooltip
 - [ ] Add automated links
-- [ ] Style 404.html
 
 ## Known issues
 
