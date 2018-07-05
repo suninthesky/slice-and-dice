@@ -1,12 +1,13 @@
 {
   "name": "slice-and-dice",
   "version": "0.1.0",
-  "description": "Data visualisation to explore 360Giving data",
+  "description": "A tool to explore 360Giving data visually",
   "scripts": {
-    "build": "webpack -w --config webpack.config.js --mode development"
+    "build": "webpack --mode production",
+    "dev": "webpack -w --mode development"
   },
   "author": "Suraj Vadgama",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",

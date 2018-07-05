@@ -36,6 +36,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+  - LICENSE
   - README.md
   - package.json
   - webpack.config.json
