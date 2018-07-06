@@ -65,7 +65,11 @@ layout: default
           {% endif %}
         </div>
 
+        {% if page.tool %}
+        <hr class="mb25">
+        {% else %}
         <hr class="mt25 mb25">
+        {% endif %}
 
         <div class="sidebar-footer">
           {% if page.tool %}

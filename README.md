@@ -2,12 +2,11 @@
 
 ## TODO
 
-- [ ] Write slicer page
+- [ ] Update SEO description frontmatter
 - [ ] Update README.md
 - [ ] Push to GitHub
 - [ ] Resolve TODO's
 - [ ] Add robots.txt
-- [ ] Update SEO description frontmatter
 - [ ] Change Jekyll SEO og:locale
 - [ ] jekyll-sitemap, jekyll-include-cache
 = [ ] Add favicon

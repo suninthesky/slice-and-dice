@@ -126,6 +126,11 @@ function plot(data, params) {
     STATE.data = mapData(data.grants);
 
     OPTS.height = (uniq(pluck(STATE.data, 'funder')).length / OPTS.rowNums) * OPTS.rowHeight;
+
+    if (OPTS.height < 700) {
+        OPTS.height = 700;
+    }
+
     OPTS.svg = d3.select('#chart').append('svg')
         .attr('width', OPTS.width)
         .attr('height', OPTS.height);

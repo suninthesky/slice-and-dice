@@ -9,7 +9,7 @@ prev: /
 next: /tour/02-an-evolving-definition-of-tech-for-good-funding
 ---
 
-This tool was created in my spare time as a submission to the [360Giving Data Visualisation Challenge](https://challenge.threesixtygiving.org/){:target="_blank"}, in answer to the question "_Who has funded what themes throughout the years_".
+This tool was created in [my](http://www.suninthesky.co.uk/){:target="_blank"} spare time as a submission to the [360Giving Data Visualisation Challenge](https://challenge.threesixtygiving.org/){:target="_blank"}, in answer to the question "_Who has funded what themes throughout the years_".
 
 It allows you to take the URL of a search on [GrantNav](http://grantnav.threesixtygiving.org/){:target="_blank"}, and visually **slice** it up by dimensions such as [Year]({{ page.url | append: "?slice=year" }}) or [Location]({{ page.url | append: "?slice=location" }}).
 
