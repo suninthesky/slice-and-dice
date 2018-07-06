@@ -2,14 +2,13 @@
 
 ## TODO
 
-- [ ] jekyll-sitemap
+- [ ] Add robots.txt
 - [ ] Update README.md
 - [ ] Push to GitHub
 - [ ] Resolve TODO's
-- [ ] Add robots.txt
-= [ ] Add favicon
-- [ ] Add social sharing meta data and images
+- [ ] Add favicon
 - [ ] Deploy
+- [ ] Add social sharing meta data and images
 - [ ] Limit data to 1,000 grants
 - [ ] undefined location & duration in tooltip
 - [ ] Add automated links
@@ -26,7 +25,7 @@
 
 `jekyll s` to run development server.
 
-`npm run dev` to bundle JavaScript.
+`npm run dev` to bundle JavaScript and watch for changes.
 
 ## Deployment
 
