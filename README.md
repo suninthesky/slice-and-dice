@@ -2,13 +2,11 @@
 
 ## TODO
 
-- [ ] Update SEO description frontmatter
+- [ ] jekyll-sitemap
 - [ ] Update README.md
 - [ ] Push to GitHub
 - [ ] Resolve TODO's
 - [ ] Add robots.txt
-- [ ] Change Jekyll SEO og:locale
-- [ ] jekyll-sitemap, jekyll-include-cache
 = [ ] Add favicon
 - [ ] Add social sharing meta data and images
 - [ ] Deploy
