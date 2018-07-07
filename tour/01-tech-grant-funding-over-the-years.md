@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: tour
 title:  01. Tech grant funding over the years
 description: Comic Relief dominated tech grant funding in 2017, along with a number of historic grants which don't relate to "tech for good".
 permalink: /tour/01-tech-grant-funding-over-the-years

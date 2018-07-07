@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: tour
 title:  03. A decade of grant funding around migration
 description: Over the last decade the Big Lottery Fund appears consistently throughout the years, with the largest volume of grants being towards the funding theme of migration being awarded in 2016. Strangely however, their funding to this theme all but disappears in 2014.
 permalink: /tour/03-a-decade-of-grant-funding-around-migration

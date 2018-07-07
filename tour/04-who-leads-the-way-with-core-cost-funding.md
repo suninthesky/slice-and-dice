@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: tour
 title:  04. Who leads the way with core cost funding?
 description: Over the past 5 years Esmée Fairbairn Foundation has been the most prolific supporter of "core costs" grants, followed by .The Tudor Trust.
 permalink: /tour/04-who-leads-the-way-with-core-cost-funding

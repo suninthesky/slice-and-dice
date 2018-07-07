@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: tour
 title:  02. An evolving definition of tech for good funding
 description: Tech for good funding has increased over the years, peaking in 2013 and 2014 with most grants from Nesta. Following which a more diverse mix of funders supported tech for good.
 permalink: /tour/02-an-evolving-definition-of-tech-for-good-funding

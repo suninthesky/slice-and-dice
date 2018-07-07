@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const params = queryParams.all(window.location.search);
 
     if (!params.q) {
-        params.q = document.getElementById('story-query').innerText;
+        params.q = document.getElementById('tour-query').innerText;
     }
 
     if (!params.slice) {
-        params.slice = document.getElementById('story-slice').innerText;
+        params.slice = document.getElementById('tour-slice').innerText;
     }
 
     const opts = {el: chartContainer, params};
