@@ -13,6 +13,6 @@ next: /tour/05-funding-core-costs-in-the-youth-sector
 
 A search for the past 5 years of [core cost]({{ page.query }}){:target="_blank"} funding (which excludes Gatsby Charitable Foundation) shows that [Esmée Fairbairn Foundation](https://www.esmeefairbairn.org.uk/){:target="_blank"} has been the most prolific supporter of "core costs", followed by [The Tudor Trust](https://tudortrust.org.uk/){:target="_blank"}.
 
-[**Slicing** by Year]({{ page.url | append: "?slice=year" }}), we see the volume of "core costs" funding has remained reasonably consistent throughout the years.
+[**Slicing** by Year]({{ site.baseurl }}{{ page.url | append: "?slice=year" }}), we see the volume of "core costs" funding has remained reasonably consistent throughout the years.
 
-For the [last example]({{ page.next }}), we'll bring the different types of funding theme we've explored together, by looking at the composite theme of "core costs + youth"...
+For the [last example]({{ site.baseurl }}{{ page.next }}), we'll bring the different types of funding theme we've explored together, by looking at the composite theme of "core costs + youth"...

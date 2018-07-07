@@ -4,7 +4,7 @@
   "description": "A tool to explore 360Giving data visually",
   "scripts": {
     "build": "webpack -p --progress && bundle exec jekyll build",
-    "start": "concurrently \"webpack -w --mode development\" \"bundle exec jekyll s --livereload\""
+    "start": "concurrently \"webpack -w --mode development\" \"bundle exec jekyll s --livereload --baseurl ''\""
   },
   "author": "Suraj Vadgama",
   "license": "MIT",

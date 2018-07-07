@@ -11,17 +11,16 @@ next: /tour/02-an-evolving-definition-of-tech-for-good-funding
 
 This tool was created in [my](http://www.suninthesky.co.uk/){:target="_blank"} spare time as a submission to the [360Giving Data Visualisation Challenge](https://challenge.threesixtygiving.org/){:target="_blank"}, in answer to the question "_Who has funded what themes throughout the years_".
 
-It allows you to take the URL of a search on [GrantNav](http://grantnav.threesixtygiving.org/){:target="_blank"}, and visually **slice** it up by dimensions such as [Year]({{ page.url | append: "?slice=year" }}) or [Location]({{ page.url | append: "?slice=location" }}).
+It allows you to take the URL of a search on [GrantNav](http://grantnav.threesixtygiving.org/){:target="_blank"}, and visually **slice** it up by dimensions such as [Year]({{ site.baseurl }}{{ page.url | append: "?slice=year" }}) or [Location]({{ site.baseurl }}{{ page.url | append: "?slice=location" }}).
 
 The next few pages will guide you through a series of **slices** that show how the tool can be used to explore a range of topical funding themes; ending in a version of the tool you can use to create your own visualisations to share.
 
-This **slice** shows grants with a [tech]({{ page.query }}){:target="_blank"} theme. We can see that Comic Relief dominated in 2017, along with a number of historic grants which don't relate to "tech for good" - which we'll focus on [next]({{ page.next }})...
+This **slice** shows grants with a [tech]({{ page.query }}){:target="_blank"} theme. We can see that Comic Relief dominated in 2017, along with a number of historic grants which don't relate to "tech for good" - which we'll focus on [next]({{ site.baseurl }}{{ page.next }})...
 
-<!-- TODO: add links -->
 >**P.S.**  
->As this is primarily a challenge submission it has not been optimised for heavy use, and includes some [known issues](#).
+>As this is primarily a challenge submission it has not been optimised for heavy use, and includes some [known issues](https://github.com/suninthesky/slice-and-dice#known-issues){:target="_blank"}.
 >
->Commentary on each **slice** is based on data available through GrantNav before July 2018, and may become outdated when GrantNav is updated. As such, if you spot a bug or would like to request a feature, please [file an issue](#), or even better consider [contributing](#) a fix.
+>Commentary on each **slice** is based on data available through GrantNav before July 2018, and may become outdated when GrantNav is updated. As such, if you spot a bug or would like to request a feature, please [file an issue](https://github.com/suninthesky/slice-and-dice/issues){:target="_blank"}, or even better consider [contributing](https://github.com/suninthesky/slice-and-dice#contributing){:target="_blank"} a fix.
 >
 >**P.P.S.**  
->Please remember this tool does little to improve the data which funders have published, which may result in missing information in places. A quick look at a dimension such as [Location]({{ page.url | append: "?slice=location" }}) will highlight some of the inconsistencies.
+>Please remember this tool does little to improve the data which funders have published, which may result in missing information in places. A quick look at a dimension such as [Location]({{ site.baseurl }}{{ page.url | append: "?slice=location" }}) will highlight some of the inconsistencies.
