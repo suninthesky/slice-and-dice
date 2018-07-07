@@ -12,13 +12,12 @@ It allows you to take the URL of a search on [GrantNav](http://grantnav.threesix
 
 ## Development
 
-`jekyll s` to run development server.
-
-`npm run dev` to bundle JavaScript and watch for changes.
+`npm start` will start Jekyll development server and Webpack in --watch mode.
 
 ## Deployment
 
 <!-- TODO: -->
+`npm run build`
 
 ## Known issues
 

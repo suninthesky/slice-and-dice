@@ -38,11 +38,13 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+  - CNAME
   - LICENSE
   - README.md
   - package.json
-  - webpack.config.json
-  - webpack
+  - package-lock.json
+  - webpack.config.js
+  - javascript
 
 sass:
   style: compressed
