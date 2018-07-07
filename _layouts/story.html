@@ -26,7 +26,11 @@ layout: default
         </div>
 
         {% if page.tool %}
+        {% if site.baseurl == '' %}
         <a href="/" class="btn btn-thin white bg-light-purple shadow mb25">Take a tour</a>
+        {% else %}
+        <a href="{{ site.baseurl }}" class="btn btn-thin white bg-light-purple shadow mb25">Take a tour</a>
+        {% endif %}
 
         <p class="mb10 bold">Query</p>
         <form id='query'>
@@ -77,7 +81,11 @@ layout: default
           <span class="pale-purple">•</span>
           <a href="https://github.com/suninthesky/slice-and-dice" target="_blank" class="white">GitHub</a>
           {% else %}
+          {% if site.baseurl == '' %}
+          <a href="/">Back to start</a>
+          {% else %}
           <a href="{{ site.baseurl }}">Back to start</a>
+          {% endif %}
           <span class="pale-purple">•</span>
           <a href="{{ site.baseurl }}/slice-and-dice">Skip tour</a>
           {% endif %}
