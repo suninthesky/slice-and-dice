@@ -1,0 +1,23 @@
+{
+  "name": "slice-and-dice",
+  "version": "0.1.0",
+  "description": "A tool to explore 360Giving data visually",
+  "scripts": {
+    "build": "webpack -p --progress && bundle exec jekyll build",
+    "start": "concurrently \"webpack -w --mode development\" \"bundle exec jekyll s --livereload\""
+  },
+  "author": "Suraj Vadgama",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "concurrently": "^3.6.0",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3"
+  },
+  "dependencies": {
+    "d3": "^3.5.17",
+    "randomcolor": "^0.5.3"
+  }
+}

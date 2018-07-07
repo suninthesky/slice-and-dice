@@ -1,0 +1,10 @@
+@import 'helpers'
+
+$shadow-color: rgba(0, 0, 0, .16)
+
+.shadow
+  +prefix(box-shadow, -5px 5px 0px 0px $shadow-color, moz webkit)
+.shadow-r
+  +prefix(box-shadow, 5px 5px 0px 0px $shadow-color, moz webkit)
+.shadow-d
+  +prefix(box-shadow, 0px 3px 0px 0px $shadow-color, moz webkit)

@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<article class="story-wrapper" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="sidebar-wrapper">
+    <aside class="sidebar">
+      <div class="f1">
+        <div id='story-query' hidden>{{ page.query }}</div>
+        <div id='story-slice' hidden>{{ page.slice }}</div>
+
+        <header>
+          <a href="{{ page.url | relative_url }}" class="white">
+            <h1 class="h2 bold" itemprop="name headline">{{ page.title | escape }}</h1>
+          </a>
+        </header>
+
+        <div class="flex">
+          {% if page.prev %}
+          <a href="{{ page.prev }}" class="btn btn-thin white bg-light-purple shadow-r">Prev</a>
+          {% endif %}
+          <span style="width: 40px;"></span>
+          {% if page.next %}
+          <a href="{{ page.next }}" class="btn btn-thin white bg-light-purple shadow">Next</a>
+          {% endif %}
+        </div>
+
+        {% if page.tool %}
+        <a href="/" class="btn btn-thin white bg-light-purple shadow mb25">Take a tour</a>
+
+        <p class="mb10 bold">Query</p>
+        <form id='query'>
+          <input type="text" name="q" placeholder="GrantNav URL" class="shadow-d">
+          <input type="submit" value="Update" title="Update" class="shadow-d">
+          <input type="reset" value="Clear" title="Clear" class="shadow-d">
+        </form>
+        {% endif %}
+
+        <div class="mt25 mb25">
+          <label for="slice" class="mb10 bold">Slice by</label>
+          <select name="slice" id="slice" class="shadow-d">
+            <option value="funder">Funder</option>
+            <option value="fund">Fund</option>
+            <option value="year">Year</option>
+            <option value="location">Location</option>
+            <option value="duration">Duration (months)</option>
+          </select>
+        </div>
+
+        <hr class="mb25">
+
+        <div itemprop="articleBody">
+          {{ content }}
+        </div>
+      </div>
+
+      <footer>
+        <div class="flex">
+          {% if page.prev %}
+          <a href="{{ page.prev }}" class="btn btn-thin white bg-light-purple shadow-r">Prev</a>
+          {% endif %}
+          <span style="width: 40px;"></span>
+          {% if page.next %}
+          <a href="{{ page.next }}" class="btn btn-thin white bg-light-purple shadow">Next</a>
+          {% endif %}
+        </div>
+
+        {% if page.tool %}
+        <hr class="mb25">
+        {% else %}
+        <hr class="mt25 mb25">
+        {% endif %}
+
+        <div class="sidebar-footer">
+          {% if page.tool %}
+          <a href="http://www.suninthesky.co.uk/" target="_blank" class="white">By suninthesky</a>
+          <span class="pale-purple">•</span>
+          <!-- TODO: add link -->
+          <a href="#" class="white">GitHub</a>
+          {% else %}
+          <a href="/">Back to start</a>
+          <span class="pale-purple">•</span>
+          <a href="{{ "/slice-and-dice" | relative_url }}">Skip tour</a>
+          {% endif %}
+        </div>
+      </footer>
+    </aside>
+  </div>
+
+  <section class="chart-wrapper">
+    <div id="tooltip" class="shadow-d"></div>
+    <div id="chart"></div>
+  </section>
+</article>

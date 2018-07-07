@@ -1,0 +1,48 @@
+// Config
+// ===========================================================================
+
+@import 'colors'
+
+$sidebar-width: 300px
+$sidebar-bg: map-get($colors, 'dark-purple')
+$story-bg: map-get($colors, 'aubergine')
+
+// ===========================================================================
+
+.story-wrapper
+  min-height: 100vh
+  background: $story-bg
+  overflow-x: hidden
+  overflow-y: auto
+
+.chart-wrapper
+  position: relative
+  margin-left: $sidebar-width
+  @media screen and (max-width: 720px)
+    margin-left: 0
+
+.sidebar-wrapper
+  position: fixed
+  height: 100%
+  width: $sidebar-width
+  overflow-y: auto
+  @media screen and (max-width: 720px)
+    position: relative
+    height: auto
+    width: 100%
+
+.sidebar-wrapper, .sidebar
+  background: $sidebar-bg
+
+.sidebar
+  display: flex
+  min-height: 100vh
+  width: 100%
+  flex-direction: column
+  padding: 25px 15px
+  @media screen and (max-width: 720px)
+    min-height: auto
+
+.sidebar-footer
+  font-size: 15px
+  text-align: center

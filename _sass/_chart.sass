@@ -1,0 +1,42 @@
+#chart
+  min-height: 100vh
+  color: white
+  text-align: center
+
+circle
+  box-sizing: border-box
+  stroke: #160929
+  stroke-width: 2px
+  opacity: .8
+  &:hover
+    opacity: 1
+
+.label
+  fill: #f9edde
+  font-size: 13px
+
+#tooltip
+  font-size: 14px
+  color: #111
+  position: absolute
+  z-index: 10
+  visibility: hidden
+  background: white
+  padding: 15px 12px 5px
+  width: 220px
+  p
+    margin-bottom: 10px
+
+  &:after
+    bottom: 100%
+    left: 50%
+    border: solid transparent
+    content: ''
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+    border-color: rgba(255, 255, 255, 0)
+    border-bottom-color: #fff
+    border-width: 7px
+    margin-left: -7px

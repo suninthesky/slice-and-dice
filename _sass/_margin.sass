@@ -1,0 +1,11 @@
+$margins: (10, 25)
+
+.mx-auto
+  margin-left: auto
+  margin-right: auto
+
+@each $px in $margins
+  .mt#{$px}
+    margin-top: #{$px}px
+  .mb#{$px}
+    margin-bottom: #{$px}px

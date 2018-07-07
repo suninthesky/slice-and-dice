@@ -1,0 +1,22 @@
+$colors: (
+  'aubergine':    #1D1A21,
+  'dark-purple':  #3F0C98,
+  'pale-purple':  #5537AB,
+  'light-purple': #726FE8,
+  'purple':       #4B0FA7,
+  'teal':         #2EAD9F,
+  'turquoise':    #7AD6CE,
+  'white':        #FAFAFA
+);
+
+@each $var, $val in $colors {
+  .#{$var} {
+    color: $val;
+    &:visited {
+      color: $val;
+    }
+  }
+  .bg-#{$var} {
+    background-color: $val !important;
+  }
+}
