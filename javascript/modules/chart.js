@@ -123,7 +123,7 @@ function mapData(arr) {
 function plot(data, params) {
     const slice = params.slice || 'funder';
 
-    STATE.data = mapData(data.grants);
+    STATE.data = mapData(data.grants.slice(0, 1350));
 
     OPTS.height = (uniq(pluck(STATE.data, 'funder')).length / OPTS.rowNums) * OPTS.rowHeight;
 

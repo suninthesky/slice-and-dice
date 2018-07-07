@@ -18,7 +18,7 @@ The next few pages will guide you through a series of **slices** that show how t
 This **slice** shows grants with a [tech]({{ page.query }}){:target="_blank"} theme. We can see that Comic Relief dominated in 2017, along with a number of historic grants which don't relate to "tech for good" - which we'll focus on [next]({{ site.baseurl }}{{ page.next }})...
 
 >**P.S.**  
->As this is primarily a challenge submission it has not been optimised for heavy use, and includes some [known issues](https://github.com/suninthesky/slice-and-dice#known-issues){:target="_blank"}.
+>As this is primarily a challenge submission, it has not been optimised for heavy use (limited to 1,350 grants) and includes some [known issues](https://github.com/suninthesky/slice-and-dice#known-issues){:target="_blank"}.
 >
 >Commentary on each **slice** is based on data available through GrantNav before July 2018, and may become outdated when GrantNav is updated. As such, if you spot a bug or would like to request a feature, please [file an issue](https://github.com/suninthesky/slice-and-dice/issues){:target="_blank"}, or even better consider [contributing](https://github.com/suninthesky/slice-and-dice#contributing){:target="_blank"} a fix.
 >

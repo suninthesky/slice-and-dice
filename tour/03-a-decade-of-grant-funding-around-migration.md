@@ -13,6 +13,6 @@ next: /tour/04-who-leads-the-way-with-core-cost-funding
 
 This **slice** shows the last decade of grants for the issue-based funding theme of [migration]({{ page.query }}){:target="_blank"}.
 
-Discounting 2018 the [Big Lottery Fund](https://www.biglotteryfund.org.uk/){:target="_blank"} appears consistently throughout the years, with the largest volume of grants being awarded in 2016. Strangely however, their funding to this theme all but disappears in 2014.
+Up until 2017 the [Big Lottery Fund](https://www.biglotteryfund.org.uk/){:target="_blank"} appears consistently throughout all years, except 2014 where their funding to this theme all but disappears. 2016 has the largest volume of funding overall.
 
 Going beyond conventional funding themes around issue or sector, [next]({{ site.baseurl }}{{ page.next }}) we'll see if **slicing** the data by *Funder* helps us identify leading supporters "core cost" funding...

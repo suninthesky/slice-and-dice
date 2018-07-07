@@ -26,7 +26,6 @@ Here are some example **slices** you might want to try:
 - [Recent Clothworkers Foundation grants by Location]({{ site.baseurl }}{{ page.url | append: page.example3 }})
 
 >**P.S.**  
->As this is primarily a [challenge](https://challenge.threesixtygiving.org/){:target="_blank"} submission it has not been optimised for heavy use, and includes some [known issues](https://github.com/suninthesky/slice-and-dice#known-issues){:target="_blank"}.
-><!-- TODO: and will limit your searches to displaying the first 1,250 grants -->
+>As this is primarily a [challenge](https://challenge.threesixtygiving.org/){:target="_blank"} submission, it has not been optimised for heavy use (limited to 1,350 grants) and includes some [known issues](https://github.com/suninthesky/slice-and-dice#known-issues){:target="_blank"}.
 >
 >If you spot a bug or would like to request a feature, please [file an issue](https://github.com/suninthesky/slice-and-dice/issues){:target="_blank"}, or even better consider [contributing](https://github.com/suninthesky/slice-and-dice#contributing){:target="_blank"} a fix.
