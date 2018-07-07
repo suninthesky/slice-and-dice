@@ -6,9 +6,10 @@ This tool was created in my spare time as a submission to the [360Giving Data Vi
 
 It allows you to take the URL of a search on [GrantNav](http://grantnav.threesixtygiving.org/), and visually **slice** it up by dimensions such as Year or Location.
 
-## Setup
+## Local setup
 
-[Instructions](https://jekyllrb.com/docs/installation/)
+1. [Install](https://www.npmjs.com/get-npm) `npm`
+2. [Install](https://jekyllrb.com/docs/installation/) Jekyll
 
 ## Development
 
@@ -16,8 +17,7 @@ It allows you to take the URL of a search on [GrantNav](http://grantnav.threesix
 
 ## Deployment
 
-<!-- TODO: -->
-`npm run build`
+Use `npm run build` to generate static files and push to `master` branch.
 
 ## Known issues
 
