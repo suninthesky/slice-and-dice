@@ -4,10 +4,36 @@
   {%- include head.html -%}
 
   <body>
+    <div id="cookie-banner">
+      <div style="padding: 15px;">
+        <p>This site tracks visits anonymously using cookies. <a href="https://cookiesandyou.com/" target="_blank">More about cookies</a></p>
+        <div class="flex">
+          <a id="accept-cookies" class="btn btn-thin white bg-teal shadow-r">Accept</a>
+          <span style="width: 40px;"></span>
+          <a id="reject-cookies" class="btn btn-thin white bg-red shadow">Reject</a>
+        </div>
+      </div>
+    </div>
 
     <main aria-label="Content">
       {{ content }}
     </main>
+
+    <script>
+      'use strict';
+
+      if (localStorage.getItem('cookie-permission') !== null) {
+        document.getElementById('cookie-banner').innerHTML = '';
+      } else {
+        ['accept-cookies', 'reject-cookies'].forEach(function(id) {
+          document.getElementById(id).addEventListener('click', function(e) {
+            e.preventDefault();
+            localStorage.setItem('cookie-permission', this.text.toLowerCase());
+            location.reload();
+          });
+        });
+      }
+    </script>
 
     <script type="text/javascript" src="{{ site.baseurl }}/dist/javascripts/bundle.js" charset="utf-8"></script>
 
