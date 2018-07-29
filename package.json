@@ -1,7 +1,7 @@
 {
   "name": "slice-and-dice",
   "version": "0.1.0",
-  "description": "A tool to explore 360Giving data visually",
+  "description": "A tool to explore GrantNav searches visually",
   "scripts": {
     "build": "webpack -p --progress && bundle exec jekyll build",
     "start": "concurrently \"webpack -w --mode development\" \"bundle exec jekyll s -I --livereload --baseurl ''\""
