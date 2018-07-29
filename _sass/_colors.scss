@@ -6,7 +6,8 @@ $colors: (
   'purple':       #4B0FA7,
   'teal':         #2EAD9F,
   'turquoise':    #7AD6CE,
-  'white':        #FAFAFA
+  'white':        #FAFAFA,
+  'red':          #F4554E
 );
 
 @each $var, $val in $colors {
