@@ -4,7 +4,7 @@
   {%- include head.html -%}
 
   <body>
-    <div id="cookie-banner">
+    <div id="cookie-banner" style="display: none;">
       <div style="padding: 15px;">
         <p>This site tracks visits anonymously using cookies. <a href="https://cookiesandyou.com/" target="_blank">More about cookies</a></p>
         <div class="flex">
@@ -22,9 +22,8 @@
     <script>
       'use strict';
 
-      if (localStorage.getItem('cookie-permission') !== null) {
-        document.getElementById('cookie-banner').innerHTML = '';
-      } else {
+      if (localStorage.getItem('cookie-permission') === null) {
+        document.getElementById('cookie-banner').style.display = '';
         ['accept-cookies', 'reject-cookies'].forEach(function(id) {
           document.getElementById(id).addEventListener('click', function(e) {
             e.preventDefault();

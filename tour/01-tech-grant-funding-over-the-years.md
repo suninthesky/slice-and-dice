@@ -15,7 +15,7 @@ It allows you to take the URL of a search on [GrantNav](http://grantnav.threesix
 
 The next few pages will guide you through a series of **slices** that show how the tool can be used to explore a range of topical funding themes; ending in a version of the tool you can use to create your own visualisations to share.
 
-This **slice** shows grants with a [tech]({{ page.query }}){:target="_blank"} theme. We can see that Comic Relief dominated in 2017, along with a number of historic grants which don't relate to "tech for good" - which we'll focus on [next]({{ site.baseurl }}{{ page.next }})...
+This **slice** shows grants with a [tech]({{ page.query }}){:target="_blank"} theme. Each grant is represented by a circle, the size of which is based on the amount awarded. We can see that Comic Relief dominated in 2017, along with a number of historic grants which don't relate to "tech for good" - which we'll focus on [next]({{ site.baseurl }}{{ page.next }})...
 
 >**P.S.**  
 >As this is primarily a challenge submission, it has not been optimised for heavy use (limited to 1,350 grants) and includes some [known issues](https://github.com/suninthesky/slice-and-dice#known-issues){:target="_blank"}.
